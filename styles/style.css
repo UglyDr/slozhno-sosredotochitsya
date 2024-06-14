@@ -171,7 +171,7 @@
 }
 
 .answer_title-decor {
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 
 .lowercase_title-decor {
@@ -213,11 +213,12 @@
 .footer {
   display: grid;
   min-height: 668px;
-  block-size: 103vh;
+  block-size: 100vh;
   align-content: center;
   justify-content: center;
   background-color: var(--bg-color);
   padding-block-start: 30px;
+  margin-block-end: 30px;
 }
 
 .footer::before {
@@ -227,7 +228,7 @@
   border-right: 1px solid var(--decorative-bracket-clr);
   width: 25px;
   height: 25px;
-  margin: 2vw 0px 0px 91vw;
+  margin: 4vw 0px 0px 91vw;
 }
 
 .footer::after {
@@ -237,11 +238,12 @@
   border-left: 1px solid var(--decorative-bracket-clr);
   width: 25px;
   height: 25px;
-  margin: 94vh 0px 0px 3vw;
+  margin: 95vh 0px 0px 3vw;
 }
 
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
+  padding-block-start: 40px;
 }
 
 @media (min-width: 768px) {
@@ -349,7 +351,12 @@
 
   .footer {
     padding: 0px 20px 0px 20px;
-    block-size: 110vh;
+    block-size: 100vh;
+    margin-block-end: 40px;
+  }
+
+  .footer-title {
+    padding-block-start: 90px;
   }
 
   .footer::after {
@@ -426,8 +433,9 @@
   }
 
   .footer {
-    block-size: 107vh;
+    block-size: 100vh;
     padding-block-start: 55px;
+    margin-block-end: 55px;
   }
 
   .footer::after {
