@@ -178,6 +178,10 @@
   margin: 10px 0px;
 }
 
+.lowercase_title-decor {
+  font-weight: 400;
+}
+
 .accent-link {
   text-decoration: none;
   text-shadow: 1px 1px 0 var(--accent-color);
