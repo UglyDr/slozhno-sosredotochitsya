@@ -15,7 +15,8 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: start;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: 10px;
 }
 
@@ -49,7 +50,7 @@
 }
 
 .decor {
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font), Sans-serif;
   color: var(--rec-decoration-clr);
   font-size: 18px;
   align-self: center;
@@ -83,6 +84,7 @@
   font-size: 18px;
   line-height: 18px;
   text-transform: lowercase;
+  cursor: pointer;
   margin-block-end: 10px;
   width: 70px;
   height: 26px;
@@ -102,12 +104,12 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--button-hover-clr);
   outline: none;
 }
 
 .title {
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font), Sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 95.7px;
@@ -122,7 +124,7 @@
 }
 
 .title-decor {
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font), Sans-serif;
   font-size: 18px;
   line-height: 23.4px;
   background: var(--accent-color);
@@ -146,13 +148,12 @@
 }
 
 .section-text_title {
-  font-family: var(--main-font);
+  font-family: var(--main-font), Sans-serif;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
   color: var(--section_title-color);
   padding: 10px 0px;
-  word-spacing: -3px;
 }
 
 .main-text-item {
@@ -161,7 +162,7 @@
 
 .main-text {
   display: block;
-  font-family: var(--main-font);
+  font-family: var(--main-font), Sans-serif;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
@@ -171,7 +172,7 @@
 }
 
 .answer_title-decor {
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 
 .lowercase_title-decor {
@@ -212,12 +213,12 @@
 
 .footer {
   display: grid;
-  min-height: 668px;
+  min-block-size: 668px;
   block-size: 100vh;
   align-content: center;
   justify-content: center;
   background-color: var(--bg-color);
-  padding-block-start: 30px;
+  padding-block-start: 20px;
   margin-block-end: 30px;
 }
 
@@ -272,15 +273,15 @@
     grid-template-columns: 33vw 62vw;
   }
 
-  .highest_text-block_item3 {
+  .highest_text-block_main {
     grid-column: 2/2;
   }
 
-  .highest_text-block_item1 {
+  .highest_text-block_title {
     padding-inline-end: 20px;
   }
 
-  .midle_text-block_item1 {
+  .midle_text-block_title {
     width: 16vw;
   }
 
@@ -296,10 +297,6 @@
 
   .lower_text-block_item {
     grid-column: 2/2;
-  }
-
-  .answer_title-decor {
-    height: 23px;
   }
 
   .gallery {
@@ -356,7 +353,7 @@
   }
 
   .footer-title {
-    padding-block-start: 90px;
+    padding-block-start: 100px;
   }
 
   .footer::after {
@@ -407,11 +404,11 @@
     gap: 20px;
   }
 
-  .midle_text-block_item1 {
+  .midle_text-block_title {
     width: 35vw;
   }
 
-  .midle_text-block_item2 {
+  .midle_text-block_main {
     grid-row: 2/2;
   }
 
@@ -434,15 +431,14 @@
 
   .footer {
     block-size: 100vh;
-    padding-block-start: 55px;
     margin-block-end: 55px;
   }
 
   .footer::after {
-    margin: 94vh 0px 0px 0px;
+    margin: 101vh 0px 0px 0px;
   }
 
   .footer::before {
-    margin: 2vh 0px 0px 94vw;
+    margin: 9vh 0px 0px 94vw;
   }
 }
