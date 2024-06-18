@@ -417,11 +417,11 @@
   }
 
   .highest_text-block {
-    grid-template-columns: 33vw 63vw;
+    grid-template-columns: 314px 1fr;
   }
 
   .lower_text-block {
-    grid-template-columns: 33vw 63vw;
+    grid-template-columns: 314px 1fr;
     grid-template-rows: 6vh auto;
   }
 
