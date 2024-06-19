@@ -213,6 +213,7 @@
 
 .footer {
   display: grid;
+  position: relative;
   min-block-size: 668px;
   block-size: 100vh;
   align-content: center;
@@ -229,7 +230,8 @@
   border-right: 1px solid var(--decorative-bracket-clr);
   width: 25px;
   height: 25px;
-  margin: 4vw 0px 0px 91vw;
+  inset-inline-end: 0;
+  margin: 35px 10px 0px 0px;
 }
 
 .footer::after {
@@ -239,7 +241,8 @@
   border-left: 1px solid var(--decorative-bracket-clr);
   width: 25px;
   height: 25px;
-  margin: 95vh 0px 0px 3vw;
+  inset-block-end: 0;
+  margin-inline-start: 10px;
 }
 
 .footer-title {
@@ -357,11 +360,11 @@
   }
 
   .footer::after {
-    margin: 134vw 0px 0px 0px;
+    margin-inline-start: 20px;
   }
 
   .footer::before {
-    margin-block-start: 7vh;
+    margin: 75px 20px 0px 0px;
   }
 }
 
@@ -432,13 +435,5 @@
   .footer {
     block-size: 100vh;
     margin-block-end: 55px;
-  }
-
-  .footer::after {
-    margin: 101vh 0px 0px 0px;
-  }
-
-  .footer::before {
-    margin: 9vh 0px 0px 94vw;
   }
 }
